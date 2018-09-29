@@ -14,13 +14,25 @@ Fruits.extend(["Pineapple","Papaya","Peach","Pitaya"])
 for pos,elem in enumerate(Fruits) :
     if(elem.startswith('A')):
         del Fruits[pos]
-        
+
+print("\n")
+print("printing the new list elements ")        
+#print the new list
+for pos,name in enumerate(Fruits):
+    print(pos,end=" ")
+    print(name)
+    
+#printing the new list size
+print("The new size is :",len(Fruits))
+
+#Declaring the new list Fruitri        
 FruiTri =[]
 
 #adding Fruits to FruiTri 3 times
 for i in range(3):
     FruiTri.extend(Fruits)
 
+print("\n")
 
 #Sort the items in reversed way
 FruiTri.sort(reverse=True)
